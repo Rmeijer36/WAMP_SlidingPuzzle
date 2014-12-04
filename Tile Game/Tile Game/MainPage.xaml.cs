@@ -39,7 +39,7 @@ namespace Tile_Game
         private const String imageKey = "currentImage";
         private int tileHeight;
         private int tileWidth;
-        private Rectangle[][] imageTiles;
+        private Rectangle[][] imageTiles {get; set;}
         public MainPage()
         {
             this.InitializeComponent();
@@ -54,6 +54,9 @@ namespace Tile_Game
                     rect.Width = tileWidth;
                     rect.Height = tileHeight;
                     rect.Fill = new SolidColorBrush(Colors.Aqua);
+                    rect.Stroke = new SolidColorBrush(Colors.Black);
+                    rect.StrokeThickness = 1;
+                    imageTiles[i][j] = rect;
                     TileGrid.Children.Add(rect);
                     Grid.SetColumn(rect, i);
                     Grid.SetRow(rect, j);
@@ -94,6 +97,7 @@ namespace Tile_Game
                 {
                      for (int j = 0; j < 3; j++)
                      {
+                         //use the image bounds to cut it up
                          //crop the image and put it into each rectangle respectivly
                             //objImg[count++] = new CroppedBitmap(src, new Int32Rect(j * 120, i * 120, 120, 120));
                      }
