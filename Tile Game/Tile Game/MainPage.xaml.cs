@@ -21,6 +21,10 @@ using Windows.Media;
 using Windows.Media.Capture;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.Storage.Streams;
+using Windows.UI.Xaml.Shapes;
+using Windows.UI;
+using Windows.UI.Core;
+
 
 namespace Tile_Game
 {
@@ -33,11 +37,29 @@ namespace Tile_Game
         //when cutting the image each square should be 182x182
         private Windows.Foundation.Collections.IPropertySet appSettings;
         private const String imageKey = "currentImage";
+        private int tileHeight;
+        private int tileWidth;
+        private Rectangle[][] imageTiles;
         public MainPage()
         {
             this.InitializeComponent();
             this.NavigationCacheMode = Windows.UI.Xaml.Navigation.NavigationCacheMode.Enabled;
-
+            tileWidth = (int) TileCanvas.ActualWidth / 4;
+            tileHeight = (int) TileCanvas.ActualHeight / 4;
+            for (int i = 0; i < 4; i++)
+            {
+                for (int j = 0; j < 4; j++)
+                {
+                    Rectangle rect = new Rectangle();
+                    rect.Width = tileWidth;
+                    rect.Height = tileHeight;
+                    rect.Fill = new SolidColorBrush(Colors.Aqua);
+                    TileGrid.Children.Add(rect);
+                    Grid.SetColumn(rect, i);
+                    Grid.SetRow(rect, j);
+                }
+                
+            }
             CompositionTarget.Rendering += CompositionTarget_Rendering;
         }
 
@@ -67,14 +89,21 @@ namespace Tile_Game
                 {
                     bitmapImage.SetSource(fileStream);
                 }
-                MainImage.Source = bitmapImage;
 
-
+                for (int i = 0; i < 3; i++)
+                {
+                     for (int j = 0; j < 3; j++)
+                     {
+                         //crop the image and put it into each rectangle respectivly
+                            //objImg[count++] = new CroppedBitmap(src, new Int32Rect(j * 120, i * 120, 120, 120));
+                     }
+                }
+                   
               //  appSettings[imageKey] = file.Path;
             }
             else
             {
-                //OutputTextBlock.Text = "Operation cancelled.";
+                //OutputTextBlock.Text = "PANIC";
             }
         }
 
@@ -102,7 +131,8 @@ namespace Tile_Game
                 {
                     bitmapImage.SetSource(fileStream);
                 }
-                MainImage.Source = bitmapImage;
+
+
                 appSettings[imageKey] = file.Path;
             }
         }
