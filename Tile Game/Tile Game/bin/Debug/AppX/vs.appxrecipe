@@ -7,7 +7,7 @@
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>9e67a5e5-f54b-4e40-8a9f-da2bf9b63a77</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\Connor\Dropbox\Connor Second Year Work\Windows and Mobile\Tile Game\Tile Game\obj\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\obj\Debug\</IntermediateOutputPath>
     <RegisteredManifestChecksum>A3CA423AD4F117902DF7AEAD1507940643CFE085902B7DC56E2573B34C07E91D</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>9e67a5e5-f54b-4e40-8a9f-da2bf9b63a77_1.0.0.0_neutral__4nh7rcwf68srg</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>9e67a5e5-f54b-4e40-8a9f-da2bf9b63a77_4nh7rcwf68srg!App</RegisteredUserModeAppID>
@@ -17,54 +17,54 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Connor\Dropbox\Connor Second Year Work\Windows and Mobile\Tile Game\Tile Game\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2014-11-27T22:59:23.614</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Connor\Dropbox\Connor Second Year Work\Windows and Mobile\Tile Game\Tile Game\bin\Debug\Tile Game.exe">
+    <AppxPackagedFile Include="C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\bin\Debug\Tile Game.exe">
       <PackagePath>Tile Game.exe</PackagePath>
-      <Modified>2014-11-27T22:59:23.360</Modified>
+      <Modified>2014-12-04T14:38:07.051</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Connor\Dropbox\Connor Second Year Work\Windows and Mobile\Tile Game\Tile Game\Assets\Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2013-07-23T11:01:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Connor\Dropbox\Connor Second Year Work\Windows and Mobile\Tile Game\Tile Game\Assets\SmallLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2013-07-23T11:01:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Connor\Dropbox\Connor Second Year Work\Windows and Mobile\Tile Game\Tile Game\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2013-07-23T11:01:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Connor\Dropbox\Connor Second Year Work\Windows and Mobile\Tile Game\Tile Game\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2013-07-23T11:01:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Connor\Dropbox\Connor Second Year Work\Windows and Mobile\Tile Game\Tile Game\bin\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
       <Modified>2014-11-27T17:47:12.874</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Connor\Dropbox\Connor Second Year Work\Windows and Mobile\Tile Game\Tile Game\bin\Debug\MainMenu.xbf">
+    <AppxPackagedFile Include="C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\bin\Debug\MainMenu.xbf">
       <PackagePath>MainMenu.xbf</PackagePath>
       <Modified>2014-11-27T22:59:23.116</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Connor\Dropbox\Connor Second Year Work\Windows and Mobile\Tile Game\Tile Game\bin\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2014-11-27T22:59:23.118</Modified>
+      <Modified>2014-12-04T14:37:14.751</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Connor\Dropbox\Connor Second Year Work\Windows and Mobile\Tile Game\Tile Game\bin\Debug\Tile Game.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\bin\Debug\Tile Game.xr.xml">
       <PackagePath>Tile Game.xr.xml</PackagePath>
-      <Modified>2014-11-27T19:55:19.061</Modified>
+      <Modified>2014-12-04T14:37:14.695</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Connor\Dropbox\Connor Second Year Work\Windows and Mobile\Tile Game\Tile Game\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <Modified>2014-11-27T22:59:23.501</Modified>
     </AppxPackagedFile>

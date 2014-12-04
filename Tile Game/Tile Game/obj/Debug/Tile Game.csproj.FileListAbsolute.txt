@@ -35,3 +35,40 @@ C:\Users\Connor\Dropbox\Connor Second Year Work\Windows and Mobile\Tile Game\Til
 C:\Users\Connor\Dropbox\Connor Second Year Work\Windows and Mobile\Tile Game\Tile Game\bin\Debug\MainMenu.xbf
 C:\Users\Connor\Dropbox\Connor Second Year Work\Windows and Mobile\Tile Game\Tile Game\obj\Debug\MainMenu.xaml
 C:\Users\Connor\Dropbox\Connor Second Year Work\Windows and Mobile\Tile Game\Tile Game\obj\Debug\MainMenu.xbf
+C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\bin\Debug\App.xbf
+C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\bin\Debug\MainMenu.xbf
+C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\bin\Debug\MainPage.xbf
+C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\bin\Debug\Tile Game.xr.xml
+C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\bin\Debug\Tile Game.exe
+C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\bin\Debug\Tile Game.pdb
+C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\bin\Debug\resources.pri
+C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\bin\Debug\AppxManifest.xml
+C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\bin\Debug\Tile Game.build.appxrecipe
+C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\obj\Debug\App.g.i.cs
+C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\obj\Debug\App.g.cs
+C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\obj\Debug\MainMenu.g.i.cs
+C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\obj\Debug\MainMenu.g.cs
+C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\obj\Debug\MainPage.g.i.cs
+C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\obj\Debug\MainPage.g.cs
+C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\obj\Debug\App.xaml
+C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\obj\Debug\MainMenu.xaml
+C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\obj\Debug\App.xbf
+C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\obj\Debug\MainMenu.xbf
+C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\obj\Debug\XamlSaveStateFile.xml
+C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\obj\Debug\MainPage.xaml
+C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\obj\Debug\MainPage.xbf
+C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\obj\Debug\Tile Game.exe
+C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\obj\Debug\Tile Game.pdb
+C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\obj\Debug\priconfig.xml
+C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\obj\Debug\priconfig.xml.intermediate
+C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\obj\Debug\layout.resfiles
+C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\obj\Debug\layout.resfiles.intermediate
+C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\obj\Debug\resources.resfiles
+C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\obj\Debug\resources.resfiles.intermediate
+C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\obj\Debug\pri.resfiles
+C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\obj\Debug\pri.resfiles.intermediate
+C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\obj\Debug\qualifiers.txt
+C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\obj\Debug\qualifiers.txt.intermediate
+C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\obj\Debug\ProjectArchitectures.txt

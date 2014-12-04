@@ -19,11 +19,12 @@
                         <GradientStop Color="White" Offset="1"/>
                     </LinearGradientBrush>
                 </Canvas.Background>
+                <Image x:Name="MainImage" Height="304" Canvas.Left="10" Canvas.Top="10" Width="419"/>
             </Canvas>
             <Button x:Name="OpenImgBtn" Content="Open Image" HorizontalAlignment="Left" Margin="740,7,0,0" VerticalAlignment="Top" Height="187" Width="599" Click="OpenImgBtn_Click" FontSize="72"/>
             <Button x:Name="ScrambleImgBtn" Content="Scramble" HorizontalAlignment="Left" Margin="740,368,0,0" VerticalAlignment="Top" Height="187" Width="599" Click="ScrambleImgBtn_Click" FontSize="72"/>
             <Button x:Name="PlayGameBtn" Content="Play" HorizontalAlignment="Left" Margin="740,549,0,0" VerticalAlignment="Top" Height="187" Width="599" Click="PlayGameBtn_Click" FontSize="72"/>
-            <Button x:Name="LeaderBoards" Content="Use Camera" HorizontalAlignment="Left" Margin="740,188,0,0" VerticalAlignment="Top" Height="187" Width="599" FontSize="72"/>
+            <Button x:Name="TakePicBtn" Content="Use Camera" HorizontalAlignment="Left" Margin="740,188,0,0" VerticalAlignment="Top" Height="187" Width="599" FontSize="72" Click="TakePicBtn_Click"/>
         </Grid>
 
     </Grid>
