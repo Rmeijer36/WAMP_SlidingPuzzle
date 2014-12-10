@@ -43,11 +43,15 @@ namespace Tile_Game
         private int numTiles = 15;
         private int borderWidth = 600;
         private bool gamePlay = true;
+        private bool toggleNum = false;
         private List<Tile> tiles = new List<Tile>();
         static readonly double[] xPosition = new double[5] { 0, 150, 300, 450, 600 };
         static readonly double[] yPosition = new double[5] { 0, 150, 300, 450, 600 };
         BitmapImage previewImage = new BitmapImage();
         WriteableBitmap mainImage = new WriteableBitmap(182, 182);
+
+        // DEBUGGING: Needed time variable to test win text
+        private int time = 1;
 
         /* ----- CONSTRUCTOR ----- */
         public MainPage()
@@ -59,13 +63,13 @@ namespace Tile_Game
             {
                 for (int j = 0; j < 4; j++)
                 {
-                    Tile t = new Tile(xPosition[i], yPosition[j], mainImage);
+                    Tile t = new Tile(xPosition[j], yPosition[i], mainImage);
                     tiles.Add(t);
                 }
             }
 
+            ToggleNumbers();
             reloadTiles();
-            refreshImages();
         }
 
         /* ----- BUTTON CLICKS START ----- */
@@ -77,15 +81,17 @@ namespace Tile_Game
             StorageFile file = await mainCamera.CaptureFileAsync(CameraCaptureUIMode.Photo);
             if (file != null)
             {
-                BitmapImage previewImage = new BitmapImage();
+                previewImage = new BitmapImage();
                 using (IRandomAccessStream fileStream = await file.OpenAsync(FileAccessMode.Read))
                 {
                     previewImage.SetSource(fileStream);
                 }
                 appSettings[imageKey] = file.Path;
+
+                solvePuzzle();
                 dividePicture(file);
+                ToggleNumbers();
                 refreshImages();
-                randomizeTiles();
             }
         }
 
@@ -102,14 +108,16 @@ namespace Tile_Game
             if (file != null)
             {
                 // Application now has read/write access to the picked file
+                previewImage = new BitmapImage();
                 using (IRandomAccessStream fileStream = await file.OpenAsync(FileAccessMode.Read))
                 {
                     previewImage.SetSource(fileStream);
                 }
 
+                solvePuzzle();
                 dividePicture(file);
+                ToggleNumbers();
                 refreshImages();
-                randomizeTiles();
             }
             else
             {
@@ -120,6 +128,11 @@ namespace Tile_Game
         private void btnRandomizeButtom_Click(object sender, RoutedEventArgs e)
         {
             randomizeTiles();
+        }
+
+        private void btnToggleNumber_Click(object sender, RoutedEventArgs e)
+        {
+            ToggleNumbers();
         }
         /* ----- BUTTON CLICKS END ----- */
 
@@ -132,9 +145,9 @@ namespace Tile_Game
             List<Point> pointList = new List<Point>();
             int pointCount = 0;
 
-            for (int y = 0; y < gridWidth; y++)
+            for (int x = 0; x < gridWidth; x++)
             {
-                for (int x = 0; x < gridWidth; x++)
+                for (int y = 0; y < gridWidth; y++)
                 {
                     if (x == (gridWidth - 1) && y == (gridWidth - 1)) { }
                     else
@@ -265,21 +278,24 @@ namespace Tile_Game
 
         private void refreshImages()
         {
-            tile1ImageBrush.ImageSource = tiles[0].tileImage;
-            tile2ImageBrush.ImageSource = tiles[1].tileImage;
-            tile3ImageBrush.ImageSource = tiles[2].tileImage;
-            tile4ImageBrush.ImageSource = tiles[3].tileImage;
-            tile5ImageBrush.ImageSource = tiles[4].tileImage;
-            tile6ImageBrush.ImageSource = tiles[5].tileImage;
-            tile7ImageBrush.ImageSource = tiles[6].tileImage;
-            tile8ImageBrush.ImageSource = tiles[7].tileImage;
-            tile9ImageBrush.ImageSource = tiles[8].tileImage;
-            tile10ImageBrush.ImageSource = tiles[9].tileImage;
-            tile11ImageBrush.ImageSource = tiles[10].tileImage;
-            tile12ImageBrush.ImageSource = tiles[11].tileImage;
-            tile13ImageBrush.ImageSource = tiles[12].tileImage;
-            tile14ImageBrush.ImageSource = tiles[13].tileImage;
-            tile15ImageBrush.ImageSource = tiles[14].tileImage;
+            if (!toggleNum)
+            {
+                tile1ImageBrush.ImageSource = tiles[0].tileImage;
+                tile2ImageBrush.ImageSource = tiles[1].tileImage;
+                tile3ImageBrush.ImageSource = tiles[2].tileImage;
+                tile4ImageBrush.ImageSource = tiles[3].tileImage;
+                tile5ImageBrush.ImageSource = tiles[4].tileImage;
+                tile6ImageBrush.ImageSource = tiles[5].tileImage;
+                tile7ImageBrush.ImageSource = tiles[6].tileImage;
+                tile8ImageBrush.ImageSource = tiles[7].tileImage;
+                tile9ImageBrush.ImageSource = tiles[8].tileImage;
+                tile10ImageBrush.ImageSource = tiles[9].tileImage;
+                tile11ImageBrush.ImageSource = tiles[10].tileImage;
+                tile12ImageBrush.ImageSource = tiles[11].tileImage;
+                tile13ImageBrush.ImageSource = tiles[12].tileImage;
+                tile14ImageBrush.ImageSource = tiles[13].tileImage;
+                tile15ImageBrush.ImageSource = tiles[14].tileImage;
+            }
         }
 
         private void reloadTiles()
@@ -300,6 +316,27 @@ namespace Tile_Game
             Tile13.Margin = new Thickness(tiles[12].xPositon, tiles[12].yPositon, 0, 0);
             Tile14.Margin = new Thickness(tiles[13].xPositon, tiles[13].yPositon, 0, 0);
             Tile15.Margin = new Thickness(tiles[14].xPositon, tiles[14].yPositon, 0, 0);
+
+            if (toggleNum == true)
+            {
+                //Textblocks
+                txtTile1.Margin = new Thickness(tiles[0].xPositon, tiles[0].yPositon, 0, 0);
+                txtTile2.Margin = new Thickness(tiles[1].xPositon, tiles[1].yPositon, 0, 0);
+                txtTile3.Margin = new Thickness(tiles[2].xPositon, tiles[2].yPositon, 0, 0);
+                txtTile4.Margin = new Thickness(tiles[3].xPositon, tiles[3].yPositon, 0, 0);
+                txtTile5.Margin = new Thickness(tiles[4].xPositon, tiles[4].yPositon, 0, 0);
+                txtTile6.Margin = new Thickness(tiles[5].xPositon, tiles[5].yPositon, 0, 0);
+                txtTile7.Margin = new Thickness(tiles[6].xPositon, tiles[6].yPositon, 0, 0);
+                txtTile8.Margin = new Thickness(tiles[7].xPositon, tiles[7].yPositon, 0, 0);
+                txtTile9.Margin = new Thickness(tiles[8].xPositon, tiles[8].yPositon, 0, 0);
+                txtTile10.Margin = new Thickness(tiles[9].xPositon, tiles[9].yPositon, 0, 0);
+                txtTile11.Margin = new Thickness(tiles[10].xPositon, tiles[10].yPositon, 0, 0);
+                txtTile12.Margin = new Thickness(tiles[11].xPositon, tiles[11].yPositon, 0, 0);
+                txtTile13.Margin = new Thickness(tiles[12].xPositon, tiles[12].yPositon, 0, 0);
+                txtTile14.Margin = new Thickness(tiles[13].xPositon, tiles[13].yPositon, 0, 0);
+                txtTile15.Margin = new Thickness(tiles[14].xPositon, tiles[14].yPositon, 0, 0);
+            }
+            checkTiles();
         }
 
         private void GameGrid_PointerMoved(object sender, PointerRoutedEventArgs e)
@@ -309,7 +346,7 @@ namespace Tile_Game
 
             if (gamePlay && tiles.Count() != 0)
             {
-                for (int i = 0; i < 15; i++)
+                for (int i = 0; i < numTiles; i++)
                 {
                     if (tiles[i].tileSelected)
                     {
@@ -381,6 +418,7 @@ namespace Tile_Game
                     tiles[i].tileSelected = false;
                 }
                 reloadTiles();
+                checkTiles();
             }
         }      
 
@@ -437,6 +475,149 @@ namespace Tile_Game
             }
         }
 
+        private void solvePuzzle()
+        {
+            List<Point> pointList = new List<Point>();
+            int pointCount = 0;
+
+            for (int y = 0; y < gridWidth; y++)
+            {
+                for (int x = 0; x < gridWidth; x++)
+                {
+                    if (x == (gridWidth - 1) && y == (gridWidth - 1)) { }
+                    else
+                    {
+                        Point point = new Point(xPosition[x], yPosition[y]);
+                        pointList.Add(point);
+                        pointCount++;
+                    }
+                }
+            }
+
+            for (int i = 0; i < numTiles; i++)
+            {
+                tiles[i].setPoint(pointList[i].X, pointList[i].Y);
+                tiles[i].setMinMax();
+            }
+            reloadTiles();
+        }
+
+        private void ToggleNumbers()
+        {
+            SolidColorBrush b = new SolidColorBrush(Windows.UI.Colors.Black);
+
+            reloadTiles();
+            toggleNum = !toggleNum;
+
+            // Toggles values
+            if (toggleNum)
+            {
+                btnToggleNumber.Content = "Toggle\nNumbers\n(ON)";
+            }
+            else
+            {
+                btnToggleNumber.Content = "Toggle\nNumbers\n(OFF)";
+            }
+
+            // Displays the numbers
+            if (toggleNum == false)
+            {
+                Tile1.Fill = tile1ImageBrush;
+                Tile2.Fill = tile2ImageBrush;
+                Tile3.Fill = tile3ImageBrush;
+                Tile4.Fill = tile4ImageBrush;
+                Tile5.Fill = tile5ImageBrush;
+                Tile6.Fill = tile6ImageBrush;
+                Tile7.Fill = tile7ImageBrush;
+                Tile8.Fill = tile8ImageBrush;
+                Tile9.Fill = tile9ImageBrush;
+                Tile10.Fill = tile10ImageBrush;
+                Tile11.Fill = tile11ImageBrush;
+                Tile12.Fill = tile12ImageBrush;
+                Tile13.Fill = tile13ImageBrush;
+                Tile14.Fill = tile14ImageBrush;
+                Tile15.Fill = tile15ImageBrush;
+                txtTile1.Text = "";
+                txtTile2.Text = "";
+                txtTile3.Text = "";
+                txtTile4.Text = "";
+                txtTile5.Text = "";
+                txtTile6.Text = "";
+                txtTile7.Text = "";
+                txtTile8.Text = "";
+                txtTile9.Text = "";
+                txtTile10.Text = "";
+                txtTile11.Text = "";
+                txtTile12.Text = "";
+                txtTile13.Text = "";
+                txtTile14.Text = "";
+                txtTile15.Text = "";
+            }
+            else
+            {
+                txtTile1.Text = " 1";
+                txtTile2.Text = " 2";
+                txtTile3.Text = " 3";
+                txtTile4.Text = " 4";
+                txtTile5.Text = " 5";
+                txtTile6.Text = " 6";
+                txtTile7.Text = " 7";
+                txtTile8.Text = " 8";
+                txtTile9.Text = " 9";
+                txtTile10.Text = "10";
+                txtTile11.Text = "11";
+                txtTile12.Text = "12";
+                txtTile13.Text = "13";
+                txtTile14.Text = "14";
+                txtTile15.Text = "15";
+                Tile1.Fill = b;
+                Tile2.Fill = b;
+                Tile3.Fill = b;
+                Tile4.Fill = b;
+                Tile5.Fill = b;
+                Tile6.Fill = b;
+                Tile7.Fill = b;
+                Tile8.Fill = b;
+                Tile9.Fill = b;
+                Tile10.Fill = b;
+                Tile11.Fill = b;
+                Tile12.Fill = b;
+                Tile13.Fill = b;
+                Tile14.Fill = b;
+                Tile15.Fill = b;
+            }
+            refreshImages();
+        }
+
+        private void checkTiles()
+        {
+            bool correctOrder = true;
+            int i = 0;
+
+            //run though each tile and check that it in the right order
+            for (int y = 0; y < gridWidth; y++)
+            {
+                for (int x = 0; x < gridWidth; x++)
+                {
+                    //if the positons are what they should be if its in the order than we do nothing
+
+                    if (tiles[i].xPositon == xPosition[x] && tiles[i].yPositon == yPosition[y]) { }
+                    //if the are not we set the bool to false
+                    else
+                    {
+                        correctOrder = false;
+                        textBlockWin.Text = "";
+                    }
+                    i++;
+                }
+            }
+            //tell the user
+            if (correctOrder && gamePlay)
+            {
+                hasWon();
+            }
+        } 
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Options.IsOpen = true;
@@ -459,7 +640,16 @@ namespace Tile_Game
 
         private void hasWon()
         {
+            // Display message, save time & redirect to leaderboard
+            if (time > 0)
+            {
+                textBlockWin.Text = "Congratulations! You did it!";
+            }
+        }
 
+        private void btnSolveButton_Click(object sender, RoutedEventArgs e)
+        {
+            solvePuzzle();
         }
     }
 }

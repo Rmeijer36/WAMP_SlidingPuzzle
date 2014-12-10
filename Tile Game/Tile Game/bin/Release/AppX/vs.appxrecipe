@@ -7,7 +7,7 @@
     <SolutionConfiguration>Release|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>9e67a5e5-f54b-4e40-8a9f-da2bf9b63a77</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\Richard\Desktop\Tile Game_Test\Tile Game\obj\Release\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Richard\Desktop\Tile Game\Tile Game\obj\Release\</IntermediateOutputPath>
     <RegisteredManifestChecksum>B2E3A6F0A1179FD9BF7BF36F18DB4563B3AA5A11168AC0F5D1EFDCA1244D7595</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>9e67a5e5-f54b-4e40-8a9f-da2bf9b63a77_1.0.0.0_neutral__4nh7rcwf68srg</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>9e67a5e5-f54b-4e40-8a9f-da2bf9b63a77_4nh7rcwf68srg!App</RegisteredUserModeAppID>
@@ -17,52 +17,52 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Richard\Desktop\Tile Game_Test\Tile Game\bin\Release\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Richard\Desktop\Tile Game\Tile Game\bin\Release\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-12-10T01:07:27.638</Modified>
+      <Modified>2014-12-10T02:27:36.276</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Richard\Desktop\Tile Game_Test\Tile Game\bin\Release\Tile Game.exe">
+    <AppxPackagedFile Include="C:\Users\Richard\Desktop\Tile Game\Tile Game\bin\Release\Tile Game.exe">
       <PackagePath>Tile Game.exe</PackagePath>
-      <Modified>2014-12-10T01:19:42.239</Modified>
+      <Modified>2014-12-10T03:22:35.817</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Richard\Desktop\Tile Game_Test\Tile Game\Assets\Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Richard\Desktop\Tile Game\Tile Game\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2014-12-02T03:58:36.565</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Richard\Desktop\Tile Game_Test\Tile Game\Assets\SmallLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Richard\Desktop\Tile Game\Tile Game\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2014-12-02T03:58:36.566</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Richard\Desktop\Tile Game_Test\Tile Game\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Richard\Desktop\Tile Game\Tile Game\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2014-12-02T03:58:36.568</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Richard\Desktop\Tile Game_Test\Tile Game\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Richard\Desktop\Tile Game\Tile Game\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2014-12-02T03:58:36.568</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Richard\Desktop\Tile Game_Test\Tile Game\bin\Release\App.xbf">
+    <AppxPackagedFile Include="C:\Users\Richard\Desktop\Tile Game\Tile Game\bin\Release\App.xbf">
       <PackagePath>App.xbf</PackagePath>
       <Modified>2014-12-10T01:02:15.696</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Richard\Desktop\Tile Game_Test\Tile Game\bin\Release\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Richard\Desktop\Tile Game\Tile Game\bin\Release\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2014-12-10T01:09:09.505</Modified>
+      <Modified>2014-12-10T03:22:35.572</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Richard\Desktop\Tile Game_Test\Tile Game\bin\Release\Tile Game.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Richard\Desktop\Tile Game\Tile Game\bin\Release\Tile Game.xr.xml">
       <PackagePath>Tile Game.xr.xml</PackagePath>
       <Modified>2014-12-10T01:09:09.483</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Richard\Desktop\Tile Game_Test\Tile Game\bin\Release\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Richard\Desktop\Tile Game\Tile Game\bin\Release\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-12-10T01:07:27.560</Modified>
+      <Modified>2014-12-10T02:27:36.142</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
