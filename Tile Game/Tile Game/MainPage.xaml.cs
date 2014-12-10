@@ -28,7 +28,6 @@ using System.Threading;
 using System.Threading.Tasks;
 
 
-
 namespace Tile_Game
 {
     /// <summary>
@@ -47,6 +46,8 @@ namespace Tile_Game
         private List<Tile> tiles = new List<Tile>();
         static readonly double[] xPosition = new double[5] { 0, 150, 300, 450, 600 };
         static readonly double[] yPosition = new double[5] { 0, 150, 300, 450, 600 };
+
+        private bool checkForWin = false;
         BitmapImage previewImage = new BitmapImage();
         WriteableBitmap mainImage = new WriteableBitmap(182, 182);
 
@@ -141,7 +142,7 @@ namespace Tile_Game
         {
             // Start the game (to add: start a timer)
             gamePlay = true;
-
+            
             List<Point> pointList = new List<Point>();
             int pointCount = 0;
 
@@ -178,6 +179,7 @@ namespace Tile_Game
                 tiles[i].setPoint(pointList[i].X, pointList[i].Y);
                 tiles[i].setMinMax();
             }
+            checkForWin = true;
             reloadTiles();
         }
 
@@ -218,6 +220,9 @@ namespace Tile_Game
 
         async private Task GetCroppedBitmapAsync(StorageFile originalImgFile, Point startPoint, Size cropSize, double scale, int whichTile)
         {
+            checkForWin = false;
+            textBlockWin.Text = "";
+            GameGrid.Opacity = 100;
             if (double.IsNaN(scale) || double.IsInfinity(scale))
             {
                 scale = 1;
@@ -254,7 +259,7 @@ namespace Tile_Game
                 bounds.Height = height;
                 bounds.Width = width;
                 transform.Bounds = bounds;
-
+                
                 transform.ScaledWidth = scaledWidth;
                 transform.ScaledHeight = scaledHeight;
 
@@ -612,7 +617,7 @@ namespace Tile_Game
                 }
             }
             //tell the user
-            if (correctOrder && gamePlay)
+            if (correctOrder && gamePlay && checkForWin)
             {
                 hasWon();
             }
@@ -643,7 +648,8 @@ namespace Tile_Game
             // Display message, save time & redirect to leaderboard
             if (time > 0)
             {
-                textBlockWin.Text = "Congratulations! You did it!";
+                GameGrid.Opacity = 0;
+                textBlockWin.Text = "Congratulations! You did it!\n Load another picture to play again!";
             }
         }
 

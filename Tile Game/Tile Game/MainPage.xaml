@@ -143,7 +143,7 @@
             <TextBlock x:Name="txtTile15" Height="600" Width="600" Margin="300,450,0,0" Text="" FontSize="125" FontFamily="Global User Interface" Foreground="White" ></TextBlock>
         </Grid>
         <Button Content="Options" HorizontalAlignment="Left" Margin="7,723,0,0" VerticalAlignment="Top" Click="Button_Click"/>
-        <TextBlock x:Name="textBlockWin" HorizontalAlignment="Left" Margin="84,310,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="100"/>
+        <TextBlock x:Name="textBlockWin" HorizontalAlignment="Left" Margin="134,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="100"/>
     </Grid>
 
     <Page.BottomAppBar>

@@ -1,5 +1,4 @@
 C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\bin\Release\App.xbf
-C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\bin\Release\MainMenu.xbf
 C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\bin\Release\MainPage.xbf
 C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\bin\Release\Tile Game.xr.xml
 C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\bin\Release\Tile Game.exe
@@ -9,15 +8,11 @@ C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\bin\Rele
 C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\bin\Release\Tile Game.build.appxrecipe
 C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\obj\Release\App.g.i.cs
 C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\obj\Release\App.g.cs
-C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\obj\Release\MainMenu.g.i.cs
-C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\obj\Release\MainMenu.g.cs
 C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\obj\Release\MainPage.g.i.cs
 C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\obj\Release\MainPage.g.cs
 C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\obj\Release\XamlTypeInfo.g.cs
 C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\obj\Release\App.xaml
-C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\obj\Release\MainMenu.xaml
 C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\obj\Release\App.xbf
-C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\obj\Release\MainMenu.xbf
 C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\obj\Release\XamlSaveStateFile.xml
 C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\obj\Release\MainPage.xaml
 C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\obj\Release\MainPage.xbf
