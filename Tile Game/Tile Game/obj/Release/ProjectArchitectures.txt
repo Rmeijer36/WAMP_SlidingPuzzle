@@ -1,1 +1,1 @@
-C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\Tile Game.csproj;neutral
+C:\Users\Richard\Desktop\Tile Game_Test\Tile Game\Tile Game.csproj;neutral

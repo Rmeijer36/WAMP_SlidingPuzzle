@@ -9,7 +9,7 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid x:Name="MainGrid" HorizontalAlignment="Left" Height="748" Margin="10,10,0,0" VerticalAlignment="Top" Width="1346">
-            <Canvas x:Name="TileCanvas" HorizontalAlignment="Left" Height="728" Margin="10,10,0,0" VerticalAlignment="Top" Width="1116" ScrollViewer.VerticalScrollBarVisibility="Disabled">
+            <Canvas x:Name="TileCanvas" HorizontalAlignment="Left" Height="728" Margin="10,10,0,0" VerticalAlignment="Top" Width="728" ScrollViewer.VerticalScrollBarVisibility="Disabled">
                 <Canvas.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <LinearGradientBrush.RelativeTransform>
@@ -19,25 +19,25 @@
                         <GradientStop Color="White" Offset="1"/>
                     </LinearGradientBrush>
                 </Canvas.Background>
-                <Grid x:Name="TileGrid" Height="728" Width="1116">
+                <Grid x:Name="TileGrid" Height="728" Width="728">
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="auto"/>
-                        <RowDefinition Height="auto"/>
-                        <RowDefinition Height="auto"/>
-                        <RowDefinition Height="auto"/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="auto"/>
-                        <ColumnDefinition Width="auto"/>
-                        <ColumnDefinition Width="auto"/>
-                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                 </Grid>
             </Canvas>
-            <Button x:ConnectionId='1' x:Name="OpenImgBtn" Content="Open Image" HorizontalAlignment="Left" Margin="1128,7,0,0" VerticalAlignment="Top" Height="187" Width="211"                          FontSize="30"/>
-            <Button x:ConnectionId='2' x:Name="ScrambleImgBtn" Content="Scramble" HorizontalAlignment="Left" Margin="1128,369,0,0" VerticalAlignment="Top" Height="186" Width="211"                              FontSize="30"/>
-            <Button x:ConnectionId='3' x:Name="PlayGameBtn" Content="Play" HorizontalAlignment="Left" Margin="1128,549,0,0" VerticalAlignment="Top" Height="187" Width="211"                           FontSize="30"/>
-            <Button x:ConnectionId='4' x:Name="TakePicBtn" Content="Use Camera" HorizontalAlignment="Left" Margin="1128,188,0,0" VerticalAlignment="Top" Height="187" Width="211" FontSize="30"                         />
+            <Button x:ConnectionId='1' x:Name="OpenImgBtn" Content="Open Image" HorizontalAlignment="Left" Margin="740,7,0,0" VerticalAlignment="Top" Height="187" Width="599"                          FontSize="72"/>
+            <Button x:ConnectionId='2' x:Name="ScrambleImgBtn" Content="Scramble" HorizontalAlignment="Left" Margin="740,368,0,0" VerticalAlignment="Top" Height="187" Width="599"                              FontSize="72"/>
+            <Button x:ConnectionId='3' x:Name="PlayGameBtn" Content="Play" HorizontalAlignment="Left" Margin="740,549,0,0" VerticalAlignment="Top" Height="187" Width="599"                           FontSize="72"/>
+            <Button x:ConnectionId='4' x:Name="TakePicBtn" Content="Use Camera" HorizontalAlignment="Left" Margin="740,188,0,0" VerticalAlignment="Top" Height="187" Width="599" FontSize="72"                         />
         </Grid>
 
     </Grid>

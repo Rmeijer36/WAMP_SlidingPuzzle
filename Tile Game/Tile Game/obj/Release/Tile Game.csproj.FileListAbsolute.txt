@@ -35,3 +35,67 @@ C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\obj\Rele
 C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\obj\Release\qualifiers.txt.intermediate
 C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\obj\Release\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\obj\Release\ProjectArchitectures.txt
+C:\Users\Richard\Desktop\Tile Game\Tile Game\bin\Release\App.xbf
+C:\Users\Richard\Desktop\Tile Game\Tile Game\bin\Release\MainPage.xbf
+C:\Users\Richard\Desktop\Tile Game\Tile Game\bin\Release\Tile Game.xr.xml
+C:\Users\Richard\Desktop\Tile Game\Tile Game\bin\Release\Tile Game.exe
+C:\Users\Richard\Desktop\Tile Game\Tile Game\bin\Release\Tile Game.pdb
+C:\Users\Richard\Desktop\Tile Game\Tile Game\bin\Release\resources.pri
+C:\Users\Richard\Desktop\Tile Game\Tile Game\bin\Release\AppxManifest.xml
+C:\Users\Richard\Desktop\Tile Game\Tile Game\bin\Release\Tile Game.build.appxrecipe
+C:\Users\Richard\Desktop\Tile Game\Tile Game\obj\Release\App.g.i.cs
+C:\Users\Richard\Desktop\Tile Game\Tile Game\obj\Release\App.g.cs
+C:\Users\Richard\Desktop\Tile Game\Tile Game\obj\Release\MainPage.g.i.cs
+C:\Users\Richard\Desktop\Tile Game\Tile Game\obj\Release\MainPage.g.cs
+C:\Users\Richard\Desktop\Tile Game\Tile Game\obj\Release\XamlTypeInfo.g.cs
+C:\Users\Richard\Desktop\Tile Game\Tile Game\obj\Release\App.xaml
+C:\Users\Richard\Desktop\Tile Game\Tile Game\obj\Release\MainPage.xaml
+C:\Users\Richard\Desktop\Tile Game\Tile Game\obj\Release\App.xbf
+C:\Users\Richard\Desktop\Tile Game\Tile Game\obj\Release\MainPage.xbf
+C:\Users\Richard\Desktop\Tile Game\Tile Game\obj\Release\XamlSaveStateFile.xml
+C:\Users\Richard\Desktop\Tile Game\Tile Game\obj\Release\Tile Game.exe
+C:\Users\Richard\Desktop\Tile Game\Tile Game\obj\Release\Tile Game.pdb
+C:\Users\Richard\Desktop\Tile Game\Tile Game\obj\Release\priconfig.xml
+C:\Users\Richard\Desktop\Tile Game\Tile Game\obj\Release\priconfig.xml.intermediate
+C:\Users\Richard\Desktop\Tile Game\Tile Game\obj\Release\layout.resfiles
+C:\Users\Richard\Desktop\Tile Game\Tile Game\obj\Release\layout.resfiles.intermediate
+C:\Users\Richard\Desktop\Tile Game\Tile Game\obj\Release\resources.resfiles
+C:\Users\Richard\Desktop\Tile Game\Tile Game\obj\Release\resources.resfiles.intermediate
+C:\Users\Richard\Desktop\Tile Game\Tile Game\obj\Release\pri.resfiles
+C:\Users\Richard\Desktop\Tile Game\Tile Game\obj\Release\pri.resfiles.intermediate
+C:\Users\Richard\Desktop\Tile Game\Tile Game\obj\Release\qualifiers.txt
+C:\Users\Richard\Desktop\Tile Game\Tile Game\obj\Release\qualifiers.txt.intermediate
+C:\Users\Richard\Desktop\Tile Game\Tile Game\obj\Release\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Richard\Desktop\Tile Game\Tile Game\obj\Release\ProjectArchitectures.txt
+C:\Users\Richard\Desktop\Tile Game_Test\Tile Game\obj\Release\App.g.i.cs
+C:\Users\Richard\Desktop\Tile Game_Test\Tile Game\obj\Release\App.g.cs
+C:\Users\Richard\Desktop\Tile Game_Test\Tile Game\obj\Release\MainPage.g.i.cs
+C:\Users\Richard\Desktop\Tile Game_Test\Tile Game\obj\Release\MainPage.g.cs
+C:\Users\Richard\Desktop\Tile Game_Test\Tile Game\obj\Release\XamlTypeInfo.g.cs
+C:\Users\Richard\Desktop\Tile Game_Test\Tile Game\obj\Release\App.xaml
+C:\Users\Richard\Desktop\Tile Game_Test\Tile Game\obj\Release\MainPage.xaml
+C:\Users\Richard\Desktop\Tile Game_Test\Tile Game\obj\Release\App.xbf
+C:\Users\Richard\Desktop\Tile Game_Test\Tile Game\obj\Release\MainPage.xbf
+C:\Users\Richard\Desktop\Tile Game_Test\Tile Game\obj\Release\XamlSaveStateFile.xml
+C:\Users\Richard\Desktop\Tile Game_Test\Tile Game\obj\Release\Tile Game.exe
+C:\Users\Richard\Desktop\Tile Game_Test\Tile Game\obj\Release\Tile Game.pdb
+C:\Users\Richard\Desktop\Tile Game_Test\Tile Game\bin\Release\App.xbf
+C:\Users\Richard\Desktop\Tile Game_Test\Tile Game\bin\Release\MainPage.xbf
+C:\Users\Richard\Desktop\Tile Game_Test\Tile Game\bin\Release\Tile Game.xr.xml
+C:\Users\Richard\Desktop\Tile Game_Test\Tile Game\bin\Release\Tile Game.exe
+C:\Users\Richard\Desktop\Tile Game_Test\Tile Game\bin\Release\Tile Game.pdb
+C:\Users\Richard\Desktop\Tile Game_Test\Tile Game\bin\Release\resources.pri
+C:\Users\Richard\Desktop\Tile Game_Test\Tile Game\bin\Release\AppxManifest.xml
+C:\Users\Richard\Desktop\Tile Game_Test\Tile Game\bin\Release\Tile Game.build.appxrecipe
+C:\Users\Richard\Desktop\Tile Game_Test\Tile Game\obj\Release\priconfig.xml
+C:\Users\Richard\Desktop\Tile Game_Test\Tile Game\obj\Release\priconfig.xml.intermediate
+C:\Users\Richard\Desktop\Tile Game_Test\Tile Game\obj\Release\layout.resfiles
+C:\Users\Richard\Desktop\Tile Game_Test\Tile Game\obj\Release\layout.resfiles.intermediate
+C:\Users\Richard\Desktop\Tile Game_Test\Tile Game\obj\Release\resources.resfiles
+C:\Users\Richard\Desktop\Tile Game_Test\Tile Game\obj\Release\resources.resfiles.intermediate
+C:\Users\Richard\Desktop\Tile Game_Test\Tile Game\obj\Release\pri.resfiles
+C:\Users\Richard\Desktop\Tile Game_Test\Tile Game\obj\Release\pri.resfiles.intermediate
+C:\Users\Richard\Desktop\Tile Game_Test\Tile Game\obj\Release\qualifiers.txt
+C:\Users\Richard\Desktop\Tile Game_Test\Tile Game\obj\Release\qualifiers.txt.intermediate
+C:\Users\Richard\Desktop\Tile Game_Test\Tile Game\obj\Release\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Richard\Desktop\Tile Game_Test\Tile Game\obj\Release\ProjectArchitectures.txt

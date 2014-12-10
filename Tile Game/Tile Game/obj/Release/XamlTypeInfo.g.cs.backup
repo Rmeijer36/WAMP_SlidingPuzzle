@@ -124,17 +124,15 @@ namespace Tile_Game.Tile_Game_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[4];
-            _typeNameTable[0] = "Tile_Game.MainMenu";
+            _typeNameTable = new string[3];
+            _typeNameTable[0] = "Tile_Game.MainPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "Tile_Game.MainPage";
 
-            _typeTable = new global::System.Type[4];
-            _typeTable[0] = typeof(global::Tile_Game.MainMenu);
+            _typeTable = new global::System.Type[3];
+            _typeTable[0] = typeof(global::Tile_Game.MainPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::Tile_Game.MainPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -169,8 +167,7 @@ namespace Tile_Game.Tile_Game_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_MainMenu() { return new global::Tile_Game.MainMenu(); }
-        private object Activate_3_MainPage() { return new global::Tile_Game.MainPage(); }
+        private object Activate_0_MainPage() { return new global::Tile_Game.MainPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -182,9 +179,9 @@ namespace Tile_Game.Tile_Game_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  Tile_Game.MainMenu
+            case 0:   //  Tile_Game.MainPage
                 userType = new global::Tile_Game.Tile_Game_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_MainMenu;
+                userType.Activator = Activate_0_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -195,13 +192,6 @@ namespace Tile_Game.Tile_Game_XamlTypeInfo
 
             case 2:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::Tile_Game.Tile_Game_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 3:   //  Tile_Game.MainPage
-                userType = new global::Tile_Game.Tile_Game_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_MainPage;
-                userType.SetIsLocalType();
-                xamlType = userType;
                 break;
             }
             return xamlType;
