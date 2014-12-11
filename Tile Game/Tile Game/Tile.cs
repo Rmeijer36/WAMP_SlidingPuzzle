@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+ * FILE        : Tile.cs
+ * PROJECT     : Windows and Mobile Programming - Final Project (Option 1 - Tile Game)
+ * AUTHORS     : Richard Meijer & Connor McQuade
+ * SUBMIT DATE : 12/10/2014
+ * DESCRIPTION : Container class for tile information.
+ */
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
