@@ -84,6 +84,7 @@ namespace Tile_Game
         {
             totalTime = watch.Elapsed.TotalSeconds;
             TimerText.Text = "Time Taken: " + String.Format("{0:0.00}", totalTime);
+            userHighScore = watch.Elapsed.TotalSeconds;
             checkTiles();
         }
        
@@ -667,8 +668,8 @@ namespace Tile_Game
 
         private void hasWon()
         {
+            userHighScore = watch.Elapsed.TotalSeconds;
             watch.Stop();
-            
             // Display message, save time & redirect to leaderboard
             if (time > 0 && didntClickAutoSolve == true)
             {
@@ -681,7 +682,7 @@ namespace Tile_Game
         }
         private void compareHighScore()
         {
-            userHighScore = watch.Elapsed.TotalSeconds;
+            
             if (userHighScore < currentHighScore)
             {
                 textBlockWin.Text = "Congratulations! High Score!\nEnter your name then Load another picture to play again!";
