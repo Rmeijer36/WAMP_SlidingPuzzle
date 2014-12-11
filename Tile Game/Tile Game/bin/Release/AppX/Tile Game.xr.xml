@@ -53,7 +53,6 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="IsEnabled" />
       <RootProperty Name="Opacity" />
-      <RootProperty Name="FontFamily" />
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
       <RootProperty Name="FontWeight" />

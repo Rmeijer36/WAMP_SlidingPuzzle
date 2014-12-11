@@ -51,8 +51,8 @@ namespace Tile_Game
         private bool leaderBoardOn = false;
         private bool didntClickAutoSolve = true;
         private double userHighScore;
-        private double currentHighScore = 10000000000.00;
-        private string currentHighScoreName = "";
+        private double currentHighScore = 0.00;
+        private string currentHighScoreName = "Name";
         private bool checkForWin = false;
         BitmapImage previewImage = new BitmapImage();
         WriteableBitmap mainImage = new WriteableBitmap(182, 182);
@@ -89,11 +89,6 @@ namespace Tile_Game
         }
        
         /* ----- BUTTON CLICKS START ----- */
-        /// <summary>
-        /// allows the user to use the camera to take a picture and use it for the sliding puzzle
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private async void btnLoadCamera_Click(object sender, RoutedEventArgs e)
         {
             CameraCaptureUI mainCamera = new CameraCaptureUI();
@@ -116,11 +111,6 @@ namespace Tile_Game
             }
         }
 
-        /// <summary>
-        /// loads a picture from a file using the file picker built into 8.1. only jpg jpeg and png are allowed
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private async void btnLoadPicture_Click(object sender, RoutedEventArgs e)
         {
             // Clear previous returned file name, if it exists, between iterations of this scenario
@@ -151,23 +141,12 @@ namespace Tile_Game
             }
         }
 
-        /// <summary>
-        /// uses the razomizeTiles method to randomize the tiles and let the user start playing
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void btnRandomizeButtom_Click(object sender, RoutedEventArgs e)
         {
-            watch.Restart();
+            didntClickAutoSolve = true;
             randomizeTiles();
-            
         }
 
-        /// <summary>
-        /// changes the tiles to numbers, basically an alternative mode for the user to play in.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void btnToggleNumber_Click(object sender, RoutedEventArgs e)
         {
             ToggleNumbers();
@@ -177,9 +156,9 @@ namespace Tile_Game
         /* ----- METHODS - GAME LOGIC ----- */
         private void randomizeTiles()
         {
-            // Start the game (to add: start a timer)
+            // Start the game
             gamePlay = true;
-
+            
             List<Point> pointList = new List<Point>();
             int pointCount = 0;
 
@@ -218,6 +197,7 @@ namespace Tile_Game
             }
             checkForWin = true;
             reloadTiles();
+            watch.Restart();
         }
 
         async private void dividePicture(StorageFile newFile)
@@ -663,6 +643,7 @@ namespace Tile_Game
             if (correctOrder && gamePlay && checkForWin)
             {
                 hasWon();
+                checkForWin = false;
             }
         } 
 
@@ -689,8 +670,9 @@ namespace Tile_Game
         private void hasWon()
         {
             watch.Stop();
+            userHighScore = watch.Elapsed.TotalSeconds;
             // Display message, save time & redirect to leaderboard
-            if (time > 0 && didntClickAutoSolve == true)
+            if (watch.Elapsed.TotalSeconds > 0 && didntClickAutoSolve == true)
             {
                 btnRandomizeButtom.IsEnabled = false;
                 GameGrid.Opacity = 0;
@@ -702,7 +684,7 @@ namespace Tile_Game
         private void compareHighScore()
         {
             
-            if (userHighScore < currentHighScore)
+            if (userHighScore > currentHighScore)
             {
                 textBlockWin.Text = "Congratulations! High Score!\nEnter your name then Load another picture to play again!";
                 disableBar();
@@ -740,7 +722,7 @@ namespace Tile_Game
             {
                 watch.Stop();
                 textBlockWin.Opacity = 100;
-                textBlockWin.Text = "High Score: " + currentHighScoreName + " -> " + currentHighScore;
+                textBlockWin.Text = "High Score:\n" + currentHighScoreName + " -> " + currentHighScore;
                 disableBar();
                 btnRandomizeButtom.IsEnabled = false;
                 GameGrid.Opacity = 0;

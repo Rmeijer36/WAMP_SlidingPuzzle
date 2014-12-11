@@ -8,6 +8,6 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
     <RemoteDebugMachine>192.168.0.18:4018 (Conestoga)</RemoteDebugMachine>
     <UseAuthentication>true</UseAuthentication>
-    <RemoteDebugEnabled>false</RemoteDebugEnabled>
+    <RemoteDebugEnabled>true</RemoteDebugEnabled>
   </PropertyGroup>
 </Project>
