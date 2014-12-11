@@ -59,7 +59,7 @@ namespace Tile_Game
         private bool leaderBoardOn = false;
         private bool didntClickAutoSolve = true;
         private double userHighScore;
-        private double currentHighScore = 0.00;
+        private double currentHighScore = 9999.99;
         private string currentHighScoreName = "Name";
         private bool checkForWin = false;
         BitmapImage previewImage = new BitmapImage();
@@ -84,7 +84,7 @@ namespace Tile_Game
                     tiles.Add(t);
                 }
             }
-            //ToggleNumbers();
+            ToggleNumbers();
             ReloadTiles();
         }
 
@@ -114,7 +114,10 @@ namespace Tile_Game
 
                 SolvePuzzle();
                 SplitPicture(file);
-                //ToggleNumbers();
+                if (toggleNum == true)
+                {
+                    ToggleNumbers();
+                }
                 ReloadImages();
             }
         }
@@ -140,7 +143,10 @@ namespace Tile_Game
 
                 SolvePuzzle();
                 SplitPicture(file);
-                //ToggleNumbers();
+                if (toggleNum == true)
+                {
+                    ToggleNumbers();
+                }
                 ReloadImages();
             }
             else
@@ -588,7 +594,7 @@ namespace Tile_Game
 
         private void ToggleNumbers()
         {
-            SolidColorBrush b = new SolidColorBrush(Windows.UI.Colors.Black);
+            SolidColorBrush b = new SolidColorBrush(Windows.UI.Colors.MidnightBlue);
             
             ReloadTiles();
             toggleNum = !toggleNum;
@@ -596,11 +602,11 @@ namespace Tile_Game
             // Toggles values
             if (toggleNum)
             {
-                btnToggleNumber.Content = "Toggle\nNumbers\n(ON)";
+                btnToggleNumber.Content = "Toggle\nNumbers\n[ON]";
             }
             else
             {
-                btnToggleNumber.Content = "Toggle\nNumbers\n(OFF)";
+                btnToggleNumber.Content = "Toggle\nNumbers\n[OFF]";
             }
 
             // Displays the numbers
@@ -738,7 +744,7 @@ namespace Tile_Game
         private void CompareHighScore()
         {
             
-            if (userHighScore > currentHighScore)
+            if (userHighScore < currentHighScore)
             {
                 textBlockWin.Text = "Congratulations! High Score!\nEnter your name then Load another picture to play again!";
                 DisableBar();

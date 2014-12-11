@@ -160,7 +160,7 @@
                     <Button  x:Name="btnLoadCamera" Content="New&#xA;Camera &#xA;Picture" Width="107" Height="100" FontWeight="Bold" Background="#FF1C41A6" FontSize="16" Click="btnLoadCamera_Click"/>
                     <Button  x:Name="btnRandomizeButtom" Content="Random&#xD;&#xA;Tiles" Width="107" Height="100" FontWeight="Bold" Background="#FF1C41A6" FontSize="16" IsEnabled="False" Click="btnRandomizeButtom_Click"/>
                     <Button  x:Name="btnSolveButton" Content="Solve&#xD;&#xA;Tiles" Width="107" Height="100" FontWeight="Bold" Background="#FF1C41A6" FontSize="16" Click="btnSolveButton_Click"/>
-                    <Button  x:Name="btnToggleNumber" Content="Toggle&#xD;&#xA;Numbers&#xD;&#xA;(OFF)" Width="107" Height="100" FontWeight="Bold" Background="#FF1C41A6" FontSize="16" Click="btnToggleNumber_Click"/>
+                    <Button  x:Name="btnToggleNumber" Content="Toggle&#xA;Numbers&#xA;[OFF]" Width="107" Height="100" FontWeight="Bold" Background="#FF1C41A6" FontSize="16" Click="btnToggleNumber_Click"/>
                     <Button  x:Name="btnViewLeaderboard" Content="Leader&#xD;&#xA;board" Width="107" Height="100" FontWeight="Bold" Background="#FF1C41A6" FontSize="16" Click="btnViewLeaderboard_Click"/>
                 </StackPanel>
             </Grid>
