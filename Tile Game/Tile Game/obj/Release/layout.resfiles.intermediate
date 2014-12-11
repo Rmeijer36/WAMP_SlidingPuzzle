@@ -4,9 +4,9 @@ Assets\SplashScreen.scale-100.png
 Assets\SplashScreen.scale-140.png
 Assets\SplashScreen.scale-180.png
 Assets\StoreLogo.scale-100.png
-Assets\TileGameSplash100.png
-Assets\TileGameSplash140.png
-Assets\TileGameSplash180.png
+Assets\TileGameSplash180.scale-100.png
+Assets\TileGameSplash180.scale-140.png
+Assets\TileGameSplash180.scale-180.png
 App.xbf
 MainPage.xbf
 Tile Game.xr.xml

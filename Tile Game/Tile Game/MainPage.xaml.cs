@@ -69,7 +69,7 @@ namespace Tile_Game
                 }
             }
 
-            ToggleNumbers();
+            //ToggleNumbers();
             reloadTiles();
         }
 
@@ -117,7 +117,7 @@ namespace Tile_Game
 
                 solvePuzzle();
                 dividePicture(file);
-                ToggleNumbers();
+                //ToggleNumbers();
                 refreshImages();
             }
             else
@@ -220,6 +220,7 @@ namespace Tile_Game
 
         async private Task GetCroppedBitmapAsync(StorageFile originalImgFile, Point startPoint, Size cropSize, double scale, int whichTile)
         {
+            btnRandomizeButtom.IsEnabled = true;
             checkForWin = false;
             textBlockWin.Text = "";
             GameGrid.Opacity = 100;
@@ -648,11 +649,15 @@ namespace Tile_Game
             // Display message, save time & redirect to leaderboard
             if (time > 0)
             {
+                btnRandomizeButtom.IsEnabled = false;
                 GameGrid.Opacity = 0;
                 textBlockWin.Text = "Congratulations! You did it!\n Load another picture to play again!";
             }
         }
+        private void highScores()
+        {
 
+        }
         private void btnSolveButton_Click(object sender, RoutedEventArgs e)
         {
             solvePuzzle();
