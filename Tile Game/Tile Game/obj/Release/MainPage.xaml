@@ -145,7 +145,7 @@
         <Button x:ConnectionId='4' Content="Options" HorizontalAlignment="Left" Margin="7,723,0,0" VerticalAlignment="Top"                     />
         <TextBlock x:Name="textBlockWin" HorizontalAlignment="Left" Margin="134,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="100"/>
         <TextBox x:Name="enterNamePrompt" HorizontalAlignment="Left" Margin="48,609,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="243" MaxLength="20" IsEnabled="False" Opacity="0" FontFamily="Global User Interface"/>
-        <Button x:ConnectionId='5' x:Name="submitNamePrompt" Content="Button" HorizontalAlignment="Left" Margin="293,606,0,0" VerticalAlignment="Top" IsEnabled="False" Opacity="0"                               />
+        <Button x:ConnectionId='5' x:Name="submitNamePrompt" Content="Submit" HorizontalAlignment="Left" Margin="293,606,0,0" VerticalAlignment="Top" IsEnabled="False" Opacity="0"                                FontFamily="Global User Interface"/>
         <TextBlock x:Name="TimerText" HorizontalAlignment="Left" Margin="0,84,0,0" TextWrapping="Wrap" Text="Timer: " VerticalAlignment="Top" Height="148" Width="383" FontSize="48"/>
     </Grid>
 

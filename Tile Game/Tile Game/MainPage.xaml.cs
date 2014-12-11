@@ -89,6 +89,11 @@ namespace Tile_Game
         }
        
         /* ----- BUTTON CLICKS START ----- */
+        /// <summary>
+        /// allows the user to use the camera to take a picture and use it for the sliding puzzle
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private async void btnLoadCamera_Click(object sender, RoutedEventArgs e)
         {
             CameraCaptureUI mainCamera = new CameraCaptureUI();
@@ -111,6 +116,11 @@ namespace Tile_Game
             }
         }
 
+        /// <summary>
+        /// loads a picture from a file using the file picker built into 8.1. only jpg jpeg and png are allowed
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private async void btnLoadPicture_Click(object sender, RoutedEventArgs e)
         {
             // Clear previous returned file name, if it exists, between iterations of this scenario
@@ -141,13 +151,23 @@ namespace Tile_Game
             }
         }
 
+        /// <summary>
+        /// uses the razomizeTiles method to randomize the tiles and let the user start playing
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnRandomizeButtom_Click(object sender, RoutedEventArgs e)
         {
-            watch.Start();
+            watch.Restart();
             randomizeTiles();
             
         }
 
+        /// <summary>
+        /// changes the tiles to numbers, basically an alternative mode for the user to play in.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnToggleNumber_Click(object sender, RoutedEventArgs e)
         {
             ToggleNumbers();
@@ -159,7 +179,7 @@ namespace Tile_Game
         {
             // Start the game (to add: start a timer)
             gamePlay = true;
-            
+
             List<Point> pointList = new List<Point>();
             int pointCount = 0;
 
@@ -668,7 +688,6 @@ namespace Tile_Game
 
         private void hasWon()
         {
-            userHighScore = watch.Elapsed.TotalSeconds;
             watch.Stop();
             // Display message, save time & redirect to leaderboard
             if (time > 0 && didntClickAutoSolve == true)
