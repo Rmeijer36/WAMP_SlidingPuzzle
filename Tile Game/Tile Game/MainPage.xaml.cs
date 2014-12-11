@@ -26,6 +26,7 @@ using Windows.UI.ViewManagement;
 using Windows.Graphics.Imaging;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Diagnostics;
 
 
 namespace Tile_Game
@@ -47,10 +48,16 @@ namespace Tile_Game
         static readonly double[] xPosition = new double[5] { 0, 150, 300, 450, 600 };
         static readonly double[] yPosition = new double[5] { 0, 150, 300, 450, 600 };
 
+        private bool leaderBoardOn = false;
+        private bool didntClickAutoSolve = true;
+        private double userHighScore;
+        private double currentHighScore = 10000000000.00;
+        private string currentHighScoreName = "";
         private bool checkForWin = false;
         BitmapImage previewImage = new BitmapImage();
         WriteableBitmap mainImage = new WriteableBitmap(182, 182);
-
+        private Stopwatch watch;
+        private double totalTime;
         // DEBUGGING: Needed time variable to test win text
         private int time = 1;
 
@@ -59,7 +66,8 @@ namespace Tile_Game
         {
             InitializeComponent();
             NavigationCacheMode = Windows.UI.Xaml.Navigation.NavigationCacheMode.Enabled;
-
+            CompositionTarget.Rendering += CompositionTarget_Rendering;
+            watch = new Stopwatch();
             for (int i = 0; i < 4; i++)
             {
                 for (int j = 0; j < 4; j++)
@@ -68,11 +76,16 @@ namespace Tile_Game
                     tiles.Add(t);
                 }
             }
-
             //ToggleNumbers();
             reloadTiles();
         }
 
+        void CompositionTarget_Rendering(object sender, object e)
+        {
+            totalTime = watch.Elapsed.TotalSeconds;
+            TimerText.Text = "Time Taken: " + String.Format("{0:0.00}", totalTime);
+        }
+       
         /* ----- BUTTON CLICKS START ----- */
         private async void btnLoadCamera_Click(object sender, RoutedEventArgs e)
         {
@@ -91,7 +104,7 @@ namespace Tile_Game
 
                 solvePuzzle();
                 dividePicture(file);
-                ToggleNumbers();
+                //ToggleNumbers();
                 refreshImages();
             }
         }
@@ -128,7 +141,9 @@ namespace Tile_Game
 
         private void btnRandomizeButtom_Click(object sender, RoutedEventArgs e)
         {
+            watch.Start();
             randomizeTiles();
+            
         }
 
         private void btnToggleNumber_Click(object sender, RoutedEventArgs e)
@@ -483,6 +498,10 @@ namespace Tile_Game
 
         private void solvePuzzle()
         {
+            watch.Stop();
+            watch.Reset();
+            gamePlay = false;
+            didntClickAutoSolve = false;
             List<Point> pointList = new List<Point>();
             int pointCount = 0;
 
@@ -511,7 +530,7 @@ namespace Tile_Game
         private void ToggleNumbers()
         {
             SolidColorBrush b = new SolidColorBrush(Windows.UI.Colors.Black);
-
+            
             reloadTiles();
             toggleNum = !toggleNum;
 
@@ -592,6 +611,7 @@ namespace Tile_Game
                 Tile14.Fill = b;
                 Tile15.Fill = b;
             }
+            reloadTiles();
             refreshImages();
         }
 
@@ -646,21 +666,93 @@ namespace Tile_Game
 
         private void hasWon()
         {
+            watch.Stop();
+            
             // Display message, save time & redirect to leaderboard
-            if (time > 0)
+            if (time > 0 && didntClickAutoSolve == true)
             {
                 btnRandomizeButtom.IsEnabled = false;
                 GameGrid.Opacity = 0;
-                textBlockWin.Text = "Congratulations! You did it!\n Load another picture to play again!";
+                compareHighScore();
             }
+            didntClickAutoSolve = true;
+            watch.Reset();
         }
-        private void highScores()
+        private void compareHighScore()
         {
-
+            userHighScore = watch.Elapsed.TotalSeconds;
+            if (userHighScore < currentHighScore)
+            {
+                textBlockWin.Text = "Congratulations! High Score!\nEnter your name then Load another picture to play again!";
+                disableBar();
+                submitNamePrompt.IsEnabled = true;
+                enterNamePrompt.IsEnabled = true;
+                submitNamePrompt.Opacity = 100;
+                enterNamePrompt.Opacity = 100;
+                currentHighScore = userHighScore;
+            }
+            else
+            {
+                textBlockWin.Text = "Congratulations!\n Load another picture to play again!";
+            }
         }
         private void btnSolveButton_Click(object sender, RoutedEventArgs e)
         {
             solvePuzzle();
+        }
+
+        private void submitNamePrompt_Click(object sender, RoutedEventArgs e)
+        {
+            submitNamePrompt.IsEnabled = false;
+            enterNamePrompt.IsEnabled = false;
+            submitNamePrompt.Opacity = 0;
+            enterNamePrompt.Opacity = 0;
+            enableBar();
+        }
+
+        private void btnViewLeaderboard_Click(object sender, RoutedEventArgs e)
+        {
+            //change to go to a new high score page
+            if (leaderBoardOn == false)
+            {
+                watch.Stop();
+                textBlockWin.Opacity = 100;
+                textBlockWin.Text = "High Score: " + currentHighScoreName + " -> " + currentHighScore;
+                disableBar();
+                btnRandomizeButtom.IsEnabled = false;
+                GameGrid.Opacity = 0;
+                leaderBoardOn = true;
+            }
+            else
+            {
+                if (watch.Elapsed.TotalSeconds > 0)
+                {
+                    watch.Start();
+                }
+                textBlockWin.Opacity = 0;
+                textBlockWin.Text = "";
+                enableBar();
+                btnRandomizeButtom.IsEnabled = true;
+                GameGrid.Opacity = 100;
+                leaderBoardOn = false;
+            }
+            
+        }
+        private void disableBar()
+        {
+            btnLoadCamera.IsEnabled = false;
+            btnLoadPicture.IsEnabled = false;
+            btnRandomizeButtom.IsEnabled = false;
+            btnSolveButton.IsEnabled = false;
+            btnToggleNumber.IsEnabled = false;
+        }
+        private void enableBar()
+        {
+            btnLoadCamera.IsEnabled = true;
+            btnLoadPicture.IsEnabled = true;
+            btnRandomizeButtom.IsEnabled = true;
+            btnSolveButton.IsEnabled = true;
+            btnToggleNumber.IsEnabled = true;
         }
     }
 }
