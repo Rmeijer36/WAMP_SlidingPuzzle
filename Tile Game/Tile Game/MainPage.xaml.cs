@@ -710,6 +710,7 @@ namespace Tile_Game
             enterNamePrompt.IsEnabled = false;
             submitNamePrompt.Opacity = 0;
             enterNamePrompt.Opacity = 0;
+            currentHighScoreName = enterNamePrompt.Text;
             enableBar();
         }
 
