@@ -84,6 +84,7 @@ namespace Tile_Game
         {
             totalTime = watch.Elapsed.TotalSeconds;
             TimerText.Text = "Time Taken: " + String.Format("{0:0.00}", totalTime);
+            checkTiles();
         }
        
         /* ----- BUTTON CLICKS START ----- */
@@ -676,7 +677,7 @@ namespace Tile_Game
                 compareHighScore();
             }
             didntClickAutoSolve = true;
-            watch.Reset();
+            
         }
         private void compareHighScore()
         {
@@ -690,6 +691,7 @@ namespace Tile_Game
                 submitNamePrompt.Opacity = 100;
                 enterNamePrompt.Opacity = 100;
                 currentHighScore = userHighScore;
+                watch.Reset();
             }
             else
             {
