@@ -20,13 +20,13 @@
     <AppXManifest Include="C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\bin\Release\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-12-10T20:00:59.187</Modified>
+      <Modified>2014-12-11T00:22:53.871</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\bin\Release\Tile Game.exe">
       <PackagePath>Tile Game.exe</PackagePath>
-      <Modified>2014-12-10T23:48:34.065</Modified>
+      <Modified>2014-12-11T00:22:53.658</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
@@ -41,12 +41,34 @@
     <AppxPackagedFile Include="C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-12-10T18:31:54.342</Modified>
+      <Modified>2014-12-11T00:21:37.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\Assets\SplashScreen.scale-140.png">
+      <PackagePath>Assets\SplashScreen.scale-140.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-12-11T00:20:47.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\Assets\SplashScreen.scale-180.png">
+      <PackagePath>Assets\SplashScreen.scale-180.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-12-11T00:16:09.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2013-07-23T11:01:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\Assets\TileGameSplash100.png">
+      <PackagePath>Assets\TileGameSplash100.png</PackagePath>
+      <Modified>2014-12-11T00:21:37.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\Assets\TileGameSplash140.png">
+      <PackagePath>Assets\TileGameSplash140.png</PackagePath>
+      <Modified>2014-12-11T00:20:47.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\Assets\TileGameSplash180.png">
+      <PackagePath>Assets\TileGameSplash180.png</PackagePath>
+      <Modified>2014-12-11T00:16:09.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\bin\Release\App.xbf">
       <PackagePath>App.xbf</PackagePath>
@@ -54,7 +76,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\bin\Release\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2014-12-10T23:31:49.009</Modified>
+      <Modified>2014-12-11T00:22:53.476</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\bin\Release\Tile Game.xr.xml">
       <PackagePath>Tile Game.xr.xml</PackagePath>
@@ -62,7 +84,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Connor\Documents\GitHub\WAMP_SlidingPuzzle\Tile Game\Tile Game\bin\Release\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-12-10T20:00:58.259</Modified>
+      <Modified>2014-12-11T00:22:53.745</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
